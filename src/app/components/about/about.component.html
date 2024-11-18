@@ -1,0 +1,11 @@
+<div class="about-container">
+
+  <h1 class="about">{{ title[0] }}</h1>
+  <p>{{ description[0] }}</p>
+
+
+  <h1 class="certificates">{{ title[1] }}</h1>
+  <ul>
+    <li *ngFor="let cert of getCertificates(description[1])">{{ cert }}</li>
+  </ul>
+</div>
